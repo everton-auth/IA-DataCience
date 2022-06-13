@@ -13,19 +13,32 @@
 ~~~~
 
 
-Cálculo de acurácia => 
 
-Accuracy = (TP + TN) / (TP + FP + TN + FN)
-
-
-  + P = Positivo
+  + P = Positivo 
   + N = Negativo
-  + TP = Positivo Verdadeiro (True Positive)
-  + FP = Falso Positivo (False Positive)
-  + TN = Negativos Verdadeiros (False True)
-  + TN = Verdadeiros Negativos (true False)
+  + TP = Positivo Verdadeiro (True Positive) => pessoas que testaram positivo para diabetes e que o sistema previu positivo.
+  + FP = Falso Positivo (False Positive) => pessoas que testaram negativo para diabetes e que o sistema previu positivo.
+  + TN = Negativos Verdadeiros (False True) => pessoas que testaram negativo para diabetes e que o sistema previu negativo.
+  + FN = Verdadeiros Negativos (true False) => pessoas que testaram positivo para diabetes e que o sistema previu negativo.
+
+ ## Cálculo de acurácia.
+![(TP + TN) / (TP + FP + TN + FN)](../assets/accuracy.png)
 
 
+## Cálulo de taxa de erro.
+![1 - accuracy](../assets/error-rate.png)
 
-[   60 || 13   ]
-[   05 || 58   ]
+## Cálculo de precisão.
+![TP / (TP + FP)](../assets/precision.png)
+
+## Cálculo de sensibilidade.
+![TP / (TP + FN)](../assets/sensibility.png)
+
+## Cálculo de especificidade.
+![TN / (TN + FP)](../assets/specitivity.png)
+
+## Cálculo de F1-Score (média harmônica)
+![(2 * (precision * sensibility)) / (precision + sensibility )](../assets/F1-score.png)
+
+## Sensibilidade VS Especificidade
+![](../assets/peso-de-decisao.png)
